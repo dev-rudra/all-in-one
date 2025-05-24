@@ -1,3 +1,6 @@
+# Created by https://www.toptal.com/developers/gitignore/api/macos,xcode,c++
+# Edit at https://www.toptal.com/developers/gitignore?templates=macos,xcode,c++
+
 ### C++ ###
 # Prerequisites
 *.d
@@ -81,3 +84,5 @@ xcuserdata/
 !*.xcworkspace/contents.xcworkspacedata
 /*.gcno
 **/xcshareddata/WorkspaceSettings.xcsettings
+
+# End of https://www.toptal.com/developers/gitignore/api/macos,xcode,c++

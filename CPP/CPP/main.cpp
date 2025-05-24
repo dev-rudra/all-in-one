@@ -1,8 +1,32 @@
+// standard input-output stream library.
 #include <iostream>
-using namespace std;
+#include "bankAccount.h"
+
+using std::string;
+
+class Employee {
+public:
+    string Name;
+    string Company;
+    int Age;
+    
+    void IntroduceYourself() {
+        std::cout << "Name: " << Name << std::endl;
+        std::cout << "Company: " << Company << std::endl;
+        std::cout << "Age: " << Age << std::endl;
+    }
+};
 
 int main() {
-    cout << "Hello, Unlock your CS, All in One Place!" << endl;
+    // BankAccount
+    BankAccount myAccount(100.0);
+    myAccount.deposit(50);
+    std::cout << "Current Balance: " << myAccount.getBalance() << std::endl;
+    std::cout << std::endl;
     
-    return 0;
+    Employee emp1;
+    emp1.Name = "Rudra";
+    emp1.Company = "Japannext";
+    emp1.Age = 29;
+    emp1.IntroduceYourself();
 }
